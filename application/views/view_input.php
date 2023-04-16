@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pertemuan 7 | Review</title>
+    <title>Review Materi MVC</title>
 </head>
 
 <style>
@@ -19,17 +16,15 @@
 </style>
 
 <body>
-    <fieldset>
+<fieldset>
         <legend>Menginput Data Siswa</legend>
-
-        <form method="POST">
+        <form action="<?= base_url('review/cetak'); ?>" method="post">
             <table>
                 <tr>
                     <th>Nama Siswa</th>
                         <td>:</td>
                         <td>
-                            <input type="text" name="nama" id="nama">
-                            <?= form_error('nama', '<br> <span style ="color : red;">','</span>'); ?>
+                            <input type="text" name="nama" id="nama" placeholder="Input Data">
                         </td>
                     </tr>
 
@@ -37,8 +32,7 @@
                         <th>Nomor Induk Siswa</th>
                         <td>:</td>
                         <td>
-                            <input type="text" name="nis" id="nis">
-                            <?= form_error('nis', '<br> <span style ="color : red;">','</span>'); ?>
+                            <input type="text" name="nis" id="nis" placeholder="Input Data">
                         </td>
                     </tr>
                     
@@ -46,8 +40,8 @@
                         <th>Kelas</th>
                         <td>:</td>
                         <td>
-                            <input type="text" name="kls" id="kls">
-                            <?= form_error('kls', '<br> <span style ="color : red;">','</span>'); ?>
+                            <input type="text" name="kls" id="kls" placeholder="Input Data">
+
                         </td>
                     </tr>
                     
@@ -64,7 +58,7 @@
                         <th>Tempat Lahir</th>
                         <td>:</td>
                         <td>
-                            <input type="text" name="tempat_lahir" id="tempat_lahir">
+                            <input type="text" name="tempat_lahir" id="tempat_lahir" placeholder="Input Data">
                         </td>
                     </tr>
 
@@ -72,7 +66,7 @@
                         <th>Alamat</th>
                         <td>:</td>
                         <td>
-                            <textarea name="alamat" id="alamat" cols="18" rows="3"></textarea>
+                            <textarea name="alamat" id="alamat" cols="18" rows="3" placeholder="Input Data"></textarea>
                         </td>
                     </tr>
 
@@ -91,13 +85,13 @@
                         <td>
                             <select name="agama" id="agama">
                                 <option>-- PILIH --</option>
-                                <option value="Islam">Islam</option>
-                                <option value="Kristen">Kristen</option>
-                                <option value="Katolik">Katolik</option>
-                                <option value="Budha">Budha</option>
-                                <option value="Hindu">Hindu</option>
-                                <option value="Protestan">Protestan</option>
-                                <option value="Khonghucu">Khonghucu</option>
+                                <option value="Islam"> Islam</option>
+                                <option value="Kristen"> Kristen</option>
+                                <option value="Katolik"> Katolik</option>
+                                <option value="Budha"> Budha</option>
+                                <option value="Hindu"> Hindu</option>
+                                <option value="Protestan"> Protestan</option>
+                                <option value="Khonghucu"> Khonghucu</option>
                             </select>
                         </td>
                     </tr>
